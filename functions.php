@@ -141,7 +141,6 @@ add_action( 'widgets_init', 'launch_creative_widgets_init' );
  */
 function launch_creative_scripts() {
 	wp_enqueue_style( 'launch-creative-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'launch-creative-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'launch-creative-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
