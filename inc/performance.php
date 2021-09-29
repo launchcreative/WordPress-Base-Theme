@@ -46,3 +46,6 @@ $urls = array_diff( $urls, array( $emoji_svg_url ) );
 
 return $urls;
 }
+
+// Disable XML-RPC
+add_filter('xmlrpc_enabled', '__return_false');
